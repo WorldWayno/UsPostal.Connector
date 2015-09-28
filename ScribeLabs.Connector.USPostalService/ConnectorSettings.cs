@@ -10,12 +10,12 @@
         public const string ConnectorTypeId = "d16d7b48-fbb1-4df0-8356-dc44194927c2";
         public const string ConnectorVersion = "1.0";
         public const string Description = "United States Postal Service Tracking API";
-        public const string Name = "ScribeLabs.Connector.USPostalService";
+        public const string Name = "USPostalService.API";
         public const bool SupportsCloud = true;
 
         public const string CompanyName = "Scribe";
 
-        public const string AppName = "USPostalServiceAPI";
+        public const string AppName = "USPostalService.API";
 
         public const string Copyright = "Copyright © 2015 Scribe All rights reserved.";
     }

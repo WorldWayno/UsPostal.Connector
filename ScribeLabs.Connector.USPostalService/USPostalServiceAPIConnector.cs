@@ -15,6 +15,7 @@
         public USPostalServiceAPIConnector()
             : base(ConnectorSettings.ConnectorTypeId)
         {
+
         }
     }
 }

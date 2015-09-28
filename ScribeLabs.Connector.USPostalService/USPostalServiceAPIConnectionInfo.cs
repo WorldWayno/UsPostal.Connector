@@ -15,13 +15,15 @@
 
         protected override IList<HttpQueryRegistration> ConfigureQueries()
         {
-            var item = this.Queries.EnumerateResponseAs<Item, Root>("/Items", root => root.Items);
+            var item = this.Queries.EnumerateResponseAs<Item, Root>("/Test", root => root.Items);
             return new List<HttpQueryRegistration> { item };
         }
 
         protected override Func<USPostalServiceAPIConnectionInfo, IConnectionConfiguration> ConnectionConfiguration()
         {
             // Configure the way to connect that is appropriate for the API you are connecting to
+            this.BaseUrl = "https://api.scribesoft.com";
+
             return this.Connection.ConfigureWithBasicAuth("GET", (form) => form.BaseUrl, this.Username, this.Password).End();
         }
 
