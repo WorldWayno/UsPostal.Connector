@@ -18,7 +18,7 @@ namespace USPostalConnector.Tests
             var connector = new USPostalServiceAPIConnector();
             var properties = new Dictionary<string, string>();
             properties.Add("Username", "wayne.lewalski@scribesoft.com");
-            properties.Add("Password","Mar40xwl@");
+            properties.Add("Password","Abc123");
 
             Assert.IsNotNull(connector);
 

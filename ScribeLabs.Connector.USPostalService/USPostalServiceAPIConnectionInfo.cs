@@ -15,7 +15,7 @@
 
         protected override IList<HttpQueryRegistration> ConfigureQueries()
         {
-            var item = this.Queries.EnumerateResponseAs<Item, Root>("/Test", root => root.Items);
+            var item = this.Queries.EnumerateResponseAs<Item, Root>("/Test", root => root);
             return new List<HttpQueryRegistration> { item };
         }
 
